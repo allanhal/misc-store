@@ -1,10 +1,10 @@
 ## Read the below instructions carefully:
 
-Create the design above with at least **10 Product Cards**.
+[x] Create the design above with at least **10 Product Cards**.
 
-On mobile only the first **4** should show, and the **“Show More”** button should trigger a smooth dropdown revealing the other **6** products.
+[x] On mobile only the first **4** should show, and the **“Show More”** button should trigger a smooth dropdown revealing the other **6** products.
 
-Hover over the image should swap the image to a secondary image.
+[x] Hover over the image should swap the image to a secondary image.
 
 Please use **Free Stock images** as placeholders:  
 https://unsplash.com/
@@ -17,9 +17,9 @@ https://unsplash.com/
 
 The main objective of this tech challenge is to see your ability to create designs using **TailwindCSS** and well structured **semantic HTML**.
 
-The design needs to be fully responsive (**desktop/mobile**). Please use plain JS (**VanillaJS**) for any functionality. The scrollbar thumb should increase to **6px height** when hovering / touching it.
+[ ] The design needs to be fully responsive (**desktop/mobile**). Please use plain JS (**VanillaJS**) for any functionality. The scrollbar thumb should increase to **6px height** when hovering / touching it.
 
-The **Show More** button (**mobile only**) should trigger a dropdown revealing the other product cards.
+[x] The **Show More** button (**mobile only**) should trigger a dropdown revealing the other product cards.
 
 ---
 

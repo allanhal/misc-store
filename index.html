@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Sellers</title>
+    <title>Misc Store Platter</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Use this in case of CDN down or no internet connection for development -->
@@ -95,14 +96,15 @@
       <!-- Product Grid/Scroll -->
       <!-- Added scroll-pl-6 and -mx-6 to allow scrolling to hit edges but have padding content -->
       <div
-        class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory custom-scrollbar -mx-6 px-6 md:mx-0 md:px-0"
+        id="product-grid"
+        class="grid grid-cols-2 gap-4 pt-4 pb-0 md:flex md:overflow-x-auto md:gap-6 md:pb-8 md:snap-x md:snap-mandatory md:custom-scrollbar md:mx-0 md:px-0 -mx-6 px-6"
       >
         <!-- Product 1: Headphones -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FFD700] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FFD700] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -138,10 +140,10 @@
 
         <!-- Product 2: Sunglasses -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-gray-100 mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-gray-100 mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -178,10 +180,10 @@
 
         <!-- Product 3: Snickers -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#E60023] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#E60023] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -214,10 +216,10 @@
 
         <!-- Product 4: Banana -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#F9A8D4] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#F9A8D4] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -254,10 +256,10 @@
 
         <!-- Product 5: Car -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -290,10 +292,10 @@
 
         <!-- Product 6: Umbrella -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -326,10 +328,10 @@
 
         <!-- Product 7: Watch -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -362,10 +364,10 @@
 
         <!-- Product 8: Laptop -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -398,10 +400,10 @@
 
         <!-- Product 9: Phone -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -434,10 +436,10 @@
 
         <!-- Product 10: Mouse -->
         <div
-          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+          class="group cursor-pointer w-full md:w-auto md:min-w-[300px] md:snap-center md:flex-shrink-0 hidden md:block extra-product-mobile origin-top transition-all duration-500 ease-out"
         >
           <div
-            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
               class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
@@ -470,13 +472,35 @@
       </div>
 
       <!-- Mobile Shop All Link (layout shift) -->
-      <div class="mt-8 md:hidden flex justify-center">
+      <div id="show-more-container" class="mt-8 md:hidden flex justify-center">
         <button
+          id="show-more-btn"
           class="w-full bg-[#111827] text-white font-bold py-3 px-6 rounded-lg text-sm hover:bg-gray-800 transition-colors"
         >
           Show More
         </button>
       </div>
+
+      <script>
+        document
+          .getElementById("show-more-btn")
+          .addEventListener("click", function () {
+            const container = document.getElementById("product-grid");
+            const hiddenItems = document.querySelectorAll(
+              ".extra-product-mobile"
+            );
+            const btnContainer = document.getElementById("show-more-container");
+
+            hiddenItems.forEach((item, index) => {
+              item.classList.remove("hidden");
+              // Small stagger or immediate reveal
+              item.classList.add("animate-fade-in-up");
+            });
+
+            // Hide the button
+            btnContainer.style.display = "none";
+          });
+      </script>
     </div>
   </body>
 </html>
