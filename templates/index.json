@@ -284,7 +284,10 @@
     },
     "custom_highlight_products": {
       "type": "highlight-products",
-      "blocks": {}
+      "blocks": {},
+      "settings": {
+        "collection": "best-sellers"
+      }
     }
   },
   "order": ["hero_jVaWmY", "product_list_fa6P9H", "custom_highlight_products"]
