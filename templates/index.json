@@ -6,10 +6,11 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */ {
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
+      "disabled": true,
       "blocks": {
         "text_YLPk4p": {
           "type": "text",
@@ -53,10 +54,7 @@
           "blocks": {}
         }
       },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
+      "block_order": ["text_YLPk4p", "button_H9gpTf"],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -90,6 +88,7 @@
     },
     "product_list_fa6P9H": {
       "type": "product-list",
+      "disabled": true,
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
@@ -255,7 +254,7 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
+            "product_card_gallery_677W  P3",
             "product_title_YXxMTj",
             "price_JQzVV4"
           ]
@@ -281,10 +280,11 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "custom_highlight_products": {
+      "type": "highlight-products",
+      "blocks": {}
     }
   },
-  "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
-  ]
+  "order": ["hero_jVaWmY", "product_list_fa6P9H", "custom_highlight_products"]
 }
