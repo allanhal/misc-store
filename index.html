@@ -32,6 +32,15 @@
               bebas: ["Bebas Neue", "sans-serif"],
               "source-serif": ["Source Serif Pro", "serif"],
             },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+            },
+            animation: {
+              "fade-in-up": "fadeInUp 0.5s ease-out forwards",
+            },
           },
         },
       };
@@ -62,12 +71,12 @@
     </style>
   </head>
 
-  <body class="bg-gray-50 min-h-screen p-4 md:p-8 font-sans text-gray-900">
+  <body class="bg-gray-50 min-h-screen md:p-4 md:p-8 font-sans text-gray-900">
     <div class="max-w-7xl mx-auto bg-white p-6 md:p-12 shadow-sm">
       <!-- Header -->
-      <div class="flex justify-between items-end mb-8">
+      <div class="flex md:justify-between items-end mb-8 justify-center">
         <h1
-          class="font-source-serif font-black text-[40px] leading-[1.2] tracking-[-0.01em] text-gray-900 md:px-2"
+          class="font-source-serif font-black md:text-[40px] text-[28px] leading-[1.2] tracking-[-0.01em] text-gray-900 md:px-2"
         >
           Best Sellers
         </h1>
@@ -106,7 +115,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FFD700] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -134,7 +143,7 @@
             <div class="flex text-gray-300 text-xs">★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$249.95</div>
+          <div class="text-sm">$249.95</div>
         </div>
 
         <!-- Product 2: Sunglasses -->
@@ -145,11 +154,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-gray-100 mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
-              >Best Seller</span
-            >
-            <span
-              class="absolute top-4 right-4 bg-green-800 text-white px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full"
+              class="absolute top-[4px] right-[4px] md:top-4 md:right-4 bg-green-800 text-white px-2 py-1 font-bold uppercase tracking-wider rounded-full z-10 md:text-[10px] text-[8px] border border-black"
               >Save 15%</span
             >
             <div class="absolute inset-0">
@@ -177,7 +182,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$149.95</div>
+          <div class="text-sm">$149.95</div>
         </div>
 
         <!-- Product 3: Snickers -->
@@ -187,10 +192,6 @@
           <div
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#E60023] mb-4 transition-transform group-hover:scale-[1.05]"
           >
-            <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
-              >Best Seller</span
-            >
             <div class="absolute inset-0">
               <!-- Default Image -->
               <img
@@ -216,7 +217,7 @@
             <div class="flex text-gray-300 text-xs">★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$89.95</div>
+          <div class="text-sm">$89.95</div>
         </div>
 
         <!-- Product 4: Banana -->
@@ -227,11 +228,11 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#F9A8D4] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <span
-              class="absolute top-4 right-4 bg-green-800 text-white px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full"
+              class="absolute top-[4px] right-[4px] md:top-4 md:right-4 bg-green-800 text-white px-2 py-1 font-bold uppercase tracking-wider rounded-full z-10 md:text-[10px] text-[8px] border border-black"
               >Save 15%</span
             >
             <div class="absolute inset-0">
@@ -259,7 +260,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$19.95</div>
+          <div class="text-sm">$19.95</div>
         </div>
 
         <!-- Product 5: Car -->
@@ -270,7 +271,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -298,7 +299,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$49.95</div>
+          <div class="text-sm">$49.95</div>
         </div>
 
         <!-- Product 6: Umbrella -->
@@ -309,7 +310,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -337,7 +338,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$29.95</div>
+          <div class="text-sm">$29.95</div>
         </div>
 
         <!-- Product 7: Watch -->
@@ -348,7 +349,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -376,7 +377,7 @@
             <div class="flex text-gray-300 text-xs">★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$299.95</div>
+          <div class="text-sm">$299.95</div>
         </div>
 
         <!-- Product 8: Laptop -->
@@ -387,7 +388,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -415,7 +416,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$1,299.00</div>
+          <div class="text-sm">$1,299.00</div>
         </div>
 
         <!-- Product 9: Phone -->
@@ -426,7 +427,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -454,7 +455,7 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$999.00</div>
+          <div class="text-sm">$999.00</div>
         </div>
 
         <!-- Product 10: Mouse -->
@@ -465,7 +466,7 @@
             class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.05]"
           >
             <span
-              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              class="absolute top-[4px] left-[4px] md:top-4 md:left-4 bg-white/90 backdrop-blur-sm px-2 py-1 font-bold uppercase tracking-wider rounded-full border border-black text-black z-10 md:text-[10px] text-[8px]"
               >Best Seller</span
             >
             <div class="absolute inset-0">
@@ -493,12 +494,12 @@
             <div class="flex text-gray-300 text-xs"></div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$59.95</div>
+          <div class="text-sm">$59.95</div>
         </div>
       </div>
 
       <!-- Mobile Shop All Link (layout shift) -->
-      <div id="show-more-container" class="mt-8 md:hidden flex justify-center">
+      <div id="show-more-container" class="mt-3 md:hidden flex justify-center">
         <button
           id="show-more-btn"
           class="w-full bg-[#111827] text-white font-bold py-3 px-6 rounded-lg text-sm hover:bg-gray-800 transition-colors"
@@ -520,11 +521,20 @@
             hiddenItems.forEach((item, index) => {
               item.classList.remove("hidden");
               // Small stagger or immediate reveal
+              item.style.animationDelay = `${index * 100}ms`;
               item.classList.add("animate-fade-in-up");
             });
 
             // Hide the button
             btnContainer.style.display = "none";
+
+            // Smooth scroll to the first revealed item
+            if (hiddenItems.length > 0) {
+              hiddenItems[0].scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
           });
       </script>
     </div>
