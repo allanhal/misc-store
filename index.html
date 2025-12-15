@@ -6,11 +6,20 @@
     <title>Best Sellers</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Use this in case of CDN down or no internet connection for development -->
+    <!-- <script src="./assets/css/tailwind-3.4.17.css"></script> -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&family=Source+Serif+Pro:ital,wght@0,900;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="./assets/css/local-fonts.css" rel="stylesheet" />
+
+    <!-- Use this in case of CDN down or no internet connection for development -->
+    <!-- <link
+      href="./assets/css/local-fonts.css"
+      rel="stylesheet"
+    /> -->
+
     <script>
       tailwind.config = {
         theme: {
@@ -32,6 +41,24 @@
         },
       };
     </script>
+    <style>
+      .custom-scrollbar::-webkit-scrollbar {
+        height: 12px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #d1d5db;
+        border-radius: 10px;
+        border: 3px solid transparent;
+        background-clip: content-box;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #9ca3af;
+        border: 0;
+      }
+    </style>
   </head>
 
   <body class="bg-gray-50 min-h-screen p-4 md:p-8 font-sans text-gray-900">
@@ -68,7 +95,7 @@
       <!-- Product Grid/Scroll -->
       <!-- Added scroll-pl-6 and -mx-6 to allow scrolling to hit edges but have padding content -->
       <div
-        class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0"
+        class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory custom-scrollbar -mx-6 px-6 md:mx-0 md:px-0"
       >
         <!-- Product 1: Headphones -->
         <div
@@ -82,10 +109,17 @@
               >Best Seller</span
             >
             <div class="absolute inset-0">
+              <!-- Default Image -->
               <img
                 src="./assets/headphone.png"
-                alt=""
+                alt="Yellow Headphones"
                 class="w-full h-full object-cover"
+              />
+              <!-- Hover Image -->
+              <img
+                src="./assets/headphone-hover.jpg"
+                alt="Yellow Headphones Side View"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -96,10 +130,10 @@
             Outside Vibes T-Shirt Sunshine
           </h3>
           <div class="flex items-center mb-1">
-            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <div class="flex text-gray-900 text-xs">★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$104.95</div>
+          <div class="font-semibold text-sm">$249.95</div>
         </div>
 
         <!-- Product 2: Sunglasses -->
@@ -120,8 +154,13 @@
             <div class="absolute inset-0">
               <img
                 src="./assets/sunglasses.png"
-                alt=""
+                alt="Black Sunglasses"
                 class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/sunglasses-hover.png"
+                alt="Black Sunglasses"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -134,10 +173,10 @@
             <div class="flex text-gray-900 text-xs">★★★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$104.95</div>
+          <div class="font-semibold text-sm">$149.95</div>
         </div>
 
-        <!-- Product 3: Red Shoe -->
+        <!-- Product 3: Snickers -->
         <div
           class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
         >
@@ -151,8 +190,13 @@
             <div class="absolute inset-0">
               <img
                 src="./assets/snickers.png"
-                alt=""
+                alt="Red Sneakers"
                 class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/snickers-hover.png"
+                alt="Red Sneakers"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -162,10 +206,10 @@
             Rest in Nature T-Shirt Charcoal
           </h3>
           <div class="flex items-center mb-1">
-            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <div class="flex text-gray-900 text-xs">★★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$104.95</div>
+          <div class="font-semibold text-sm">$89.95</div>
         </div>
 
         <!-- Product 4: Banana -->
@@ -186,8 +230,13 @@
             <div class="absolute inset-0">
               <img
                 src="./assets/banana.png"
-                alt=""
+                alt="Pink Banana Art"
                 class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/banana-hover.png"
+                alt="Pink Banana Art"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -200,7 +249,7 @@
             <div class="flex text-gray-900 text-xs">★★★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$104.95</div>
+          <div class="font-semibold text-sm">$19.95</div>
         </div>
 
         <!-- Product 5: Car -->
@@ -217,8 +266,13 @@
             <div class="absolute inset-0">
               <img
                 src="./assets/car.png"
-                alt=""
+                alt="Pink Retro Car"
                 class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/car-hover.png"
+                alt="Pink Retro Car"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
           </div>
@@ -231,7 +285,187 @@
             <div class="flex text-gray-900 text-xs">★★★★★</div>
             <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
           </div>
-          <div class="font-semibold text-sm">$104.95</div>
+          <div class="font-semibold text-sm">$49.95</div>
+        </div>
+
+        <!-- Product 6: Umbrella -->
+        <div
+          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+        >
+          <div
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+          >
+            <span
+              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              >Best Seller</span
+            >
+            <div class="absolute inset-0">
+              <img
+                src="./assets/umbrella.jpg"
+                alt="Retro Umbrella"
+                class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/umbrella-hover.jpg"
+                alt="Retro Umbrella"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          <h3
+            class="font-bebas text-[18px] font-normal leading-none tracking-[0.03em] uppercase mb-1"
+          >
+            Retro Umbrella
+          </h3>
+          <div class="flex items-center mb-1">
+            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
+          </div>
+          <div class="font-semibold text-sm">$29.95</div>
+        </div>
+
+        <!-- Product 7: Watch -->
+        <div
+          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+        >
+          <div
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+          >
+            <span
+              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              >Best Seller</span
+            >
+            <div class="absolute inset-0">
+              <img
+                src="./assets/watch.png"
+                alt="Luxury Watch"
+                class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/watch-hover.png"
+                alt="Luxury Watch"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          <h3
+            class="font-bebas text-[18px] font-normal leading-none tracking-[0.03em] uppercase mb-1"
+          >
+            Where Luxury Meets Intelligence
+          </h3>
+          <div class="flex items-center mb-1">
+            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
+          </div>
+          <div class="font-semibold text-sm">$299.95</div>
+        </div>
+
+        <!-- Product 8: Laptop -->
+        <div
+          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+        >
+          <div
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+          >
+            <span
+              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              >Best Seller</span
+            >
+            <div class="absolute inset-0">
+              <img
+                src="./assets/laptop.png"
+                alt="High Performance Laptop"
+                class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/laptop-hover.png"
+                alt="High Performance Laptop"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          <h3
+            class="font-bebas text-[18px] font-normal leading-none tracking-[0.03em] uppercase mb-1"
+          >
+            Performance, Without Compromise
+          </h3>
+          <div class="flex items-center mb-1">
+            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
+          </div>
+          <div class="font-semibold text-sm">$1,299.00</div>
+        </div>
+
+        <!-- Product 9: Phone -->
+        <div
+          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+        >
+          <div
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+          >
+            <span
+              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              >Best Seller</span
+            >
+            <div class="absolute inset-0">
+              <img
+                src="./assets/phone.png"
+                alt="Smart Phone"
+                class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/phone-hover.png"
+                alt="Smart Phone"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          <h3
+            class="font-bebas text-[18px] font-normal leading-none tracking-[0.03em] uppercase mb-1"
+          >
+            Best on your pocket
+          </h3>
+          <div class="flex items-center mb-1">
+            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
+          </div>
+          <div class="font-semibold text-sm">$999.00</div>
+        </div>
+
+        <!-- Product 10: Mouse -->
+        <div
+          class="group cursor-pointer min-w-[280px] md:min-w-[300px] snap-center flex-shrink-0"
+        >
+          <div
+            class="relative rounded-2xl overflow-hidden aspect-square bg-[#FBCFE8] mb-4 transition-transform group-hover:scale-[1.02]"
+          >
+            <span
+              class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full border border-gray-200"
+              >Best Seller</span
+            >
+            <div class="absolute inset-0">
+              <img
+                src="./assets/mouse.png"
+                alt="Wireless Mouse"
+                class="w-full h-full object-cover"
+              />
+              <img
+                src="./assets/mouse-hover.png"
+                alt="Wireless Mouse"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+          </div>
+          <h3
+            class="font-bebas text-[18px] font-normal leading-none tracking-[0.03em] uppercase mb-1"
+          >
+            Mouse away and away
+          </h3>
+          <div class="flex items-center mb-1">
+            <div class="flex text-gray-900 text-xs">★★★★★</div>
+            <span class="text-[10px] text-gray-400 ml-1">1,234 Reviews</span>
+          </div>
+          <div class="font-semibold text-sm">$59.95</div>
         </div>
       </div>
 
