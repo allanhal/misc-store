@@ -63,6 +63,7 @@
         "custom_mobile_media": false,
         "media_type_1_mobile": "image",
         "media_type_2_mobile": "image",
+        "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -254,7 +255,7 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677W  P3",
+            "product_card_gallery_677WP3",
             "product_title_YXxMTj",
             "price_JQzVV4"
           ]
@@ -262,7 +263,7 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "all",
+        "collection": "best-sellers",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 8,
