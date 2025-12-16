@@ -1,3 +1,16 @@
+## Observations
+
+- Repo: https://allanpinheiro.github.io/misc-store
+- Static page (src: _**static-page**_): https://misc-store-platter.vercel.app
+- Shopify store: https://quickstart-ba2a1ba9.myshopify.com
+- Store password: via email
+
+This is a configuration for a product, with 2 images (default and hover) and using labels with [color:text] that will be displayed as pills on top of the image.
+
+[![Product](images/product.png)](images/product.png)
+
+---
+
 ## Read the below instructions carefully:
 
 [x] Create the design above with at least **10 Product Cards**.

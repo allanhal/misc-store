@@ -54,10 +54,7 @@
           "blocks": {}
         }
       },
-      "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
-      ],
+      "block_order": ["text_YLPk4p", "button_H9gpTf"],
       "disabled": true,
       "name": "t:names.hero",
       "settings": {
@@ -289,13 +286,10 @@
     "custom_highlight_products": {
       "type": "highlight-products",
       "settings": {
-        "collection": "best-sellers"
+        "collection": "best-sellers",
+        "title": "Best Sellers"
       }
     }
   },
-  "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H",
-    "custom_highlight_products"
-  ]
+  "order": ["hero_jVaWmY", "product_list_fa6P9H", "custom_highlight_products"]
 }
