@@ -1,6 +1,6 @@
 ## Observations
 
-- Repo: https://allanpinheiro.github.io/misc-store
+- Repo: https://github.com/allanhal/misc-store
 - Static page (src: _**static-page**_): https://misc-store-platter.vercel.app
 - Shopify store: https://quickstart-ba2a1ba9.myshopify.com
 - Store password: via email
