@@ -6,11 +6,11 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */ {
+ */
+{
   "sections": {
     "hero_jVaWmY": {
       "type": "hero",
-      "disabled": true,
       "blocks": {
         "text_YLPk4p": {
           "type": "text",
@@ -54,7 +54,11 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_YLPk4p", "button_H9gpTf"],
+      "block_order": [
+        "text_YLPk4p",
+        "button_H9gpTf"
+      ],
+      "disabled": true,
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -89,7 +93,6 @@
     },
     "product_list_fa6P9H": {
       "type": "product-list",
-      "disabled": true,
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
@@ -261,6 +264,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Featured collection",
       "settings": {
         "collection": "best-sellers",
@@ -284,11 +288,14 @@
     },
     "custom_highlight_products": {
       "type": "highlight-products",
-      "blocks": {},
       "settings": {
         "collection": "best-sellers"
       }
     }
   },
-  "order": ["hero_jVaWmY", "product_list_fa6P9H", "custom_highlight_products"]
+  "order": [
+    "hero_jVaWmY",
+    "product_list_fa6P9H",
+    "custom_highlight_products"
+  ]
 }
