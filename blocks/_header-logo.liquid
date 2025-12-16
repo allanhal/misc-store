@@ -1,5 +1,3 @@
-
-
 {% liquid
   assign block_settings = block.settings
   assign use_inverse_logo = false
@@ -130,7 +128,8 @@
     }
   }
 
-  .header-logo:has(.header-logo__image-container--inverse) .header-logo__image-container--original {
+  .header-logo:has(.header-logo__image-container--inverse)
+    .header-logo__image-container--original {
     display: var(--header-logo-display, block);
   }
 

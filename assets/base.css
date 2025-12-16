@@ -25,9 +25,9 @@ body {
 
 html {
   /* Firefox */
-  scrollbar-width: thin;
+  /* scrollbar-width: thin;
   scrollbar-color: rgb(var(--color-foreground-rgb) / var(--opacity-40)) var(--color-background);
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; */
 }
 
 html[scroll-lock] {
@@ -1654,7 +1654,7 @@ zoom-dialog dialog {
   background: #fff;
   opacity: 0;
   transition: opacity var(--animation-speed) var(--animation-easing);
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
 
   &[open] {
     opacity: 1;
@@ -1731,7 +1731,7 @@ zoom-dialog dialog {
   opacity: 0;
   padding: var(--padding-lg);
   margin-inline: auto;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   animation: thumbnailsSlideInBottom calc(var(--animation-speed) * 0.75) var(--animation-easing) forwards;
   animation-delay: calc(var(--animation-speed) * 1.5);
 }
@@ -3271,8 +3271,8 @@ slideshow-slides {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scrollbar-color: transparent transparent;
-  scrollbar-width: none;
+  /* scrollbar-color: transparent transparent; */
+  /* scrollbar-width: none; */
   gap: var(--slideshow-gap, 0);
   cursor: var(--cursor);
   min-height: var(--slide-min-height);
@@ -3285,9 +3285,9 @@ slideshow-slides {
     width: 0;
   }
 
-  &::-webkit-scrollbar-track {
+  /* &::-webkit-scrollbar-track {
     background: transparent;
-  }
+  } */
 
   /* &::-webkit-scrollbar-thumb {
     background: transparent;
