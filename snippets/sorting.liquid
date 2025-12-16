@@ -28,7 +28,7 @@
     endfor
   %}
 
-  <div class="sorting-filter__container {% if should_use_select_on_mobile %} desktop:hidden {% else %} hidden {% endif %}">
+  <div class="sorting-filter__container {% if should_use_select_on_mobile %} desktop:hidden {% else %} hidden-shopify {% endif %}">
     <label
       for="sort-select-{{ section_id }}"
       class="facets__label"
@@ -229,7 +229,8 @@
     min-width: var(--facets-panel-min-width);
     min-height: 0;
 
-    transition: grid-template-rows var(--animation-speed-slow) var(--animation-easing),
+    transition: grid-template-rows var(--animation-speed-slow)
+        var(--animation-easing),
       opacity var(--animation-speed-slow) var(--animation-easing);
   }
 
@@ -266,7 +267,8 @@
     align-items: center;
     min-width: 180px;
     max-width: 16em;
-    padding: var(--padding-2xs) calc(var(--drawer-padding) / 2) var(--padding-2xs) var(--padding-2xs);
+    padding: var(--padding-2xs) calc(var(--drawer-padding) / 2)
+      var(--padding-2xs) var(--padding-2xs);
 
     &:hover {
       border-radius: calc(var(--style-border-radius-popover) / 2);
@@ -314,7 +316,9 @@
     display: none;
   }
 
-  .facets-mobile-wrapper:has(> :nth-child(2)) .sorting-filter .sorting-filter__options {
+  .facets-mobile-wrapper:has(> :nth-child(2))
+    .sorting-filter
+    .sorting-filter__options {
     left: 0;
     right: unset;
   }

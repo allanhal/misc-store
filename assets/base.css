@@ -470,7 +470,7 @@ p:empty {
 
 /* Utility */
 
-.hidden {
+.hidden-shopify {
   /* stylelint-disable-next-line declaration-no-important */
   display: none !important;
 }
