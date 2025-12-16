@@ -76,7 +76,7 @@
 <div
   id="ResultsList"
   class="
-    grid main-collection-grid
+    grid-shopify main-collection-grid
     {%- if section.settings.inherit_color_scheme == false %} color-{{ section.settings.color_scheme }}{% endif %}
     {%- if section.settings.product_grid_width == 'full-width' %} collection-wrapper--full-width{% endif %}
     {%- if section.settings.full_width_on_mobile == true %} collection-wrapper--full-width-on-mobile{% endif %}
@@ -106,7 +106,10 @@
           {{ 'content.no_products_found' | t }}
         </h2>
         <p>
-          {{ 'content.use_fewer_filters_html' | t: link: collection.url, class: 'main-collection-grid__empty-link' }}
+          {{
+            'content.use_fewer_filters_html'
+            | t: link: collection.url, class: 'main-collection-grid__empty-link'
+          }}
         </p>
       </div>
     {% else %}
@@ -136,13 +139,23 @@
               const grid = document.querySelector('.product-grid');
               if (!grid) return;
 
-              const storedLayoutMobile = sessionStorage.getItem('product-grid-view-mobile') || 'default';
-              const storedLayoutDesktop = sessionStorage.getItem('product-grid-view-desktop') || 'default';
+              const storedLayoutMobile =
+                sessionStorage.getItem('product-grid-view-mobile') || 'default';
+              const storedLayoutDesktop =
+                sessionStorage.getItem('product-grid-view-desktop') ||
+                'default';
 
               // No need to read the window width if no custom layouts were saved.
-              if (storedLayoutMobile === 'default' && storedLayoutDesktop === 'default') return;
+              if (
+                storedLayoutMobile === 'default' &&
+                storedLayoutDesktop === 'default'
+              )
+                return;
 
-              const storedLayout = window.innerWidth >= 750 ? storedLayoutDesktop : storedLayoutMobile;
+              const storedLayout =
+                window.innerWidth >= 750
+                  ? storedLayoutDesktop
+                  : storedLayoutMobile;
               if (storedLayout === 'default') return;
 
               grid.setAttribute('product-grid-view', storedLayout);
@@ -201,7 +214,8 @@
     padding: var(--grid--margin--mobile);
 
     @media screen and (min-width: 750px) {
-      padding: var(--padding-block-start) var(--padding-inline-end) var(--padding-block-end) var(--padding-inline-start);
+      padding: var(--padding-block-start) var(--padding-inline-end)
+        var(--padding-block-end) var(--padding-inline-start);
     }
   }
 

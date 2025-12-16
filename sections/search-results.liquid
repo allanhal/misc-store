@@ -1,5 +1,3 @@
-
-
 <script
   src="{{ 'results-list.js' | asset_url }}"
   type="module"
@@ -14,10 +12,13 @@
   section-id="{{ section.id }}"
   infinite-scroll="{{ section.settings.enable_infinite_scroll }}"
 >
-  {% render 'skip-to-content-link', href: '#ResultsList', text: 'accessibility.skip_to_results_list' %}
+  {% render 'skip-to-content-link',
+    href: '#ResultsList',
+    text: 'accessibility.skip_to_results_list'
+  %}
 
   <div
-    class="collection-wrapper grid gap-style"
+    class="collection-wrapper grid-shopify gap-style"
   >
     {% assign products_per_page = 24 %}
 
@@ -27,12 +28,23 @@
 
     {% paginate search.results by products_per_page %}
       {% if search.results_count > 0 %}
-        {% content_for 'block', type: 'filters', id: 'filters', results: search, results_size: search.results_count %}
+        {% content_for 'block',
+          type: 'filters',
+          id: 'filters',
+          results: search,
+          results_size: search.results_count
+        %}
         {% assign products = search.results | where: 'object_type', 'product' %}
       {% else %}
-        {% assign collection = settings.empty_state_collection | default: collections.all %}
-        {% assign default_title = 'content.search_results_resource_products' | t %}
-        {% assign title = settings.empty_state_collection.title | default: default_title %}
+        {% assign collection = settings.empty_state_collection
+          | default: collections.all
+        %}
+        {% assign default_title = 'content.search_results_resource_products'
+          | t
+        %}
+        {% assign title = settings.empty_state_collection.title
+          | default: default_title
+        %}
         {% assign products = collection.products %}
       {% endif %}
 
